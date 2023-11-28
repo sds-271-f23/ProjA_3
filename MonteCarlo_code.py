@@ -18,7 +18,8 @@ class MonteCarlo:
        
     def throw_darts(self):
     # Creates random numbers of dart throws and store them in the coordinates
-       
+    # sara - add comment  
+    
     def check_circle(self):
     #want to check if the coordinate is smaller than the radius of the circle to confirm it is inside circle
 
