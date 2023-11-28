@@ -1,14 +1,20 @@
 #import needed packages
+import numpy as np
+
 class MonteCarlo:
     def __init__(self, radius, iterations, nthrows):
     # Initializing a monteCarlo method with radisu,iterations, and nthrows as parameters
         self.radius = radius
         self.iterations = iterations
         self.nthrows = nthrows 
-        
-   # initlaizlize a 2D NumPy array as the attribute of the MonteCarlo class.
+        # initlaizlize a 2D NumPy array as the attribute of the MonteCarlo class.
+        self.coordinates = np.zeros(nthrows)
+
     def random_dart(self): 
     # Generating the random coordinates(x,y) for the nthrows for the monteCarlo stimulation. It returns the coordiantes.
+        half_x = np.random()
+        half_y = np.random()
+        return (2*half_x, 2*half_y)
        
     def throw_darts(self):
     # Creates random numbers of dart throws and store them in the coordinates
