@@ -4,7 +4,7 @@ class MonteCarlo:
     # Initializing a monteCarlo method with radisu,iterations, and nthrows as parameters
         
    # initlaizlize a 2D NumPy array as the attribute of the MonteCarlo class.
-    def random_dart(self):
+    def random_dart(self): 
     # Generating the random coordinates(x,y) for the nthrows for the monteCarlo stimulation. It returns the coordiantes.
        
     def throw_darts(self):
@@ -21,8 +21,7 @@ class MonteCarlo:
     # Radius is used to find the distance of coordinates from origin.
             
         # if distance < radius of the circle the point falls inside the circle.
-            
-    
+              
     def estimate_pi(self):
         # estimating pi with one experiment of nthrows, using Montecarlo stimulation.It returns a float(pi_value)
         
@@ -49,5 +48,3 @@ class MonteCarlo:
         #use coordinates in order to plot them onto the scatterplot
        
         #adding aesthetic(s)/details to the scatterplot: title, labels, etc. 
-      
-        
