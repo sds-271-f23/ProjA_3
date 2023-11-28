@@ -2,6 +2,9 @@
 class MonteCarlo:
     def __init__(self, radius, iterations, nthrows):
     # Initializing a monteCarlo method with radisu,iterations, and nthrows as parameters
+        self.radius = radius
+        self.iterations = iterations
+        self.nthrows = nthrows 
         
    # initlaizlize a 2D NumPy array as the attribute of the MonteCarlo class.
     def random_dart(self): 
