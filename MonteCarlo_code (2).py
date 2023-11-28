@@ -1,4 +1,4 @@
-import numpy as np
+#import needed packages
 class MonteCarlo:
     def __init__(self, radius, iterations, nthrows):
     # Initializing a monteCarlo method with radisu,iterations, and nthrows as parameters
