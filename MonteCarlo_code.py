@@ -5,11 +5,12 @@ class MonteCarlo:
         self.radius = radius
         self.iterations = iterations
         self.nthrows = nthrows 
+        self.coordinates = 
         
    # initlaizlize a 2D NumPy array as the attribute of the MonteCarlo class.
     def random_dart(self): 
     # Generating the random coordinates(x,y) for the nthrows for the monteCarlo stimulation. It returns the coordiantes.
-       
+       self.coordinates = 
     def throw_darts(self):
     # Creates random numbers of dart throws and store them in the coordinates
        
