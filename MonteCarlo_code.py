@@ -41,19 +41,28 @@ class MonteCarlo:
     
     def monte_carlo_sim(self):
         #create a list where the results can be stored inside
+        results = []
         
         #for loop that uses the range of number of iterations to estimate pi, then append this to the results list.
-         
+        for i in range(self.iterations):
+            self.coordinates = self.throw_darts()
+            ratio = self.check_circle()/self.nthrows
+            results.append(ratio)
+            
         #turn the results list into an array
+        results = numpy.asarray(results) 
          
         #calculate the mean
+        mean = results.mean()
        
         #calculate std deviation
+        std = results.std()
         
         #calculate std error using std deviation.
+        se = std/np.sqrt(self.nthrows)
         
         #return or print these values
-        
+        return(mean, std, se)
             
     def visualization(self):
         #use coordinates in order to plot them onto the scatterplot
