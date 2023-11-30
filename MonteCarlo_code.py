@@ -35,7 +35,10 @@ class MonteCarlo:
               
     def estimate_pi(self):
         # estimating pi with one experiment of nthrows, using Montecarlo stimulation.It returns a float(pi_value)
-        
+        #circle = self.check_circle()
+        pi_value = (circle / self.nthrows)/4
+        float_pi = float(pi_value)
+        return pi_value
     # knowing the ratio of area for a circle is pi/4, we find the pi value as following
         
     
@@ -66,5 +69,9 @@ class MonteCarlo:
             
     def visualization(self):
         #use coordinates in order to plot them onto the scatterplot
-       
+        plt.scatter(self.coordinates)
         #adding aesthetic(s)/details to the scatterplot: title, labels, etc. 
+        plt.title(“Monte Carlo Simulation”)
+        plt.xlabel(“X-axis”)
+        plt.ylabel(“Y-axis”)
+        plt.show()
